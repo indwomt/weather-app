@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./styles.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <div class="container">
+    <div class="col-12 py-3 text-center">
+      <h1>Weather App</h1>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 mt-2 border border-primary text-center">
+        <h3>Search City</h3>
+        <form class="text-center d-flex justify-content-center  my-2 my-lg-0"><button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form" type="textarea" placeholder="Search" aria-label="Search" id="city-choice">
+          
+        </form>
+        
+      </div>
+      <div class="col-8 border border-primary">
+        <h3 id="current-city" class="text-center"></h3>
+        <div id="current-temperature"></div>
+        <div id="current-humidity"></div>
+        <div id="current-wind-speed"></div>
+        <div id="current-uv-index"></div>
+        
+
+        
+        
+        <div class="row future-forecast-container fluid-container position-absolute top-50 start-50 flex-row-reverse col-10 d-block">
+          <!-- 5 day forecast title-->
+          <h2 class="future-forecast-title" id="future-forecast-title"></h2>
+          <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+              <!-- future day forecard card -->
+              
+              <div class="card col-3">
+                <div class="card-body">
+              <!-- <div class="future-card ml-4 rounded"> -->
+                  <p class="future-date" id="future-date-1"></p>
+                  <img id="future-icon-1" src="" alt="">
+                  <p class="future-temp" id="future-temp-1"></p>
+                  <p class="future-humidity" id="future-humidity-1"></p>
+              <!-- </div> -->
+              </div>
+              </div>
+              
+              <div class="card col-3">
+                <div class="card-body">
+              <!-- <div class="future-card ml-4 rounded"> -->
+                  <p class="future-date" id="future-date-2"></p>
+                  <img id="future-icon-2" src="" alt="">
+                  <p class="future-temp" id="future-temp-2"></p>
+                  <p class="future-humidity" id="future-humidity-2"></p>
+              <!-- </div> -->
+              </div>
+              </div>
+
+              <div class="card col-3">
+                <div class="card-body">
+              <!-- <div class="future-card ml-4 rounded"> -->
+                  <p class="future-date" id="future-date-3"></p>
+                  <img id="future-icon-3" src="" alt="">
+                  <p class="future-temp" id="future-temp-3"></p>
+                  <p class="future-humidity" id="future-humidity-3"></p>
+              <!-- </div> -->
+              </div>
+              </div>
+
+              <div class="card col-3">
+                <div class="card-body">
+              <!-- <div class="future-card ml-4 rounded"> -->
+                  <p class="future-date" id="future-date-4"></p>
+                  <img id="future-icon-4" src="" alt="">
+                  <p class="future-temp" id="future-temp-4"></p>
+                  <p class="future-humidity" id="future-humidity-4"></p>
+              <!-- </div> -->
+              </div>
+              </div>
+
+              <div class="card col-3">
+                <div class="card-body">
+              <!-- <div class="future-card ml-4 rounded"> -->
+                  <p class="future-date" id="future-date-5"></p>
+                  <img id="future-icon-5" src="" alt="">
+                  <p class="future-temp" id="future-temp-5"></p>
+                  <p class="future-humidity" id="future-humidity-5"></p>
+              <!-- </div> -->
+              </div>
+              </div>
+          
+            </div>
+      </div>
+  
+      </div>
+    </div>
+
+<div class="row">
+  
+</div>
+<div class="row">
+  <div class="col-2">
+  <div class="container d-flex-col col-3" id="history">
+
+  </div>
+</div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
